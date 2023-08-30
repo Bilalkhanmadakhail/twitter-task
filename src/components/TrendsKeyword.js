@@ -23,7 +23,9 @@ const TrendsKeyword = () => {
   ]);
   return (
     <div className="keywords">
+      
       <div className="key">
+    
         <div className="keyword__heading">
           <h4>Trends for you</h4>
         </div>
@@ -37,6 +39,7 @@ const TrendsKeyword = () => {
           </div>
         ))}
       </div>
+     
     </div>
   );
 };

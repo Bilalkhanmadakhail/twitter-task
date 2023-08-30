@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import {
   FaTwitter,
   FaHome,
@@ -11,6 +12,13 @@ import {
   FaMehBlank,
 } from "react-icons/fa";
 const Sidebar = () => {
+  const [isDivVisible, setIsDivVisible] = useState(false);
+
+  const toggleDiv = () => {
+      setIsDivVisible(!isDivVisible);
+  };
+
+  
   
   return (
     <div className="sidebar">
@@ -61,9 +69,11 @@ const Sidebar = () => {
             <FaMehBlank className="icons" /> More
           </a>
         </li>
-        <div className="sidebar__Btn">
-          <a href="">Profile</a>
+        <div  className="sidebar__Btn">
+          <a onClick={toggleDiv} href="#">Setting</a>
+          
         </div>
+     
       </ul>
     </div>
   );

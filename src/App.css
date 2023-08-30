@@ -88,6 +88,7 @@ body {
   left: 82px;
   padding: 5px;
 }
+
 .dark{
   width: 30px;
 left: 970px;
@@ -95,14 +96,14 @@ top: 10px;
 position: absolute;
 z-index: 20;
   
- 
-  
-  
+
 }
 /* .profile-pic{
   width: 50px;
   height: 50px;
 } */
+
+
 .posts__home {
   width: 50%;
   position: fixed;
